@@ -8,28 +8,53 @@ function App() {
     return result === 0 ? result + 1 : result;
   };
 
+  let rotateDegsere = "rotate(" + angle + "deg)";
+  let imgStyleAngle = {
+    transform: rotateDegsere,
+  };
   if (angle > 0) {
     return (
       <div className="mainContent">
         <h1>Strike angle is {angle}</h1>
-        <button
-          className="newAngleButton"
-          onClick={() => setAngle(setAngleFunc())}
-        >
-          New strike!
-        </button>
+        <div>
+          <button
+            className="newAngleButton"
+            onClick={() => setAngle(setAngleFunc())}
+          >
+            New strike!
+          </button>
+        </div>
+        <div className="imgDiv">
+          <img
+            src="https://www.freepngimg.com/thumb/sword/24135-6-katana-transparent.png"
+            className="katanaImage"
+            alt="katana-img"
+            style={imgStyleAngle}
+          ></img>
+        </div>
       </div>
     );
   }
   return (
     <div className="mainContent">
       <h1>Choose your destiny!</h1>
-      <button
-        className="newAngleButton"
-        onClick={() => setAngle(setAngleFunc())}
-      >
-        Fisrt strike!
-      </button>
+      <div>
+        <button
+          className="newAngleButton"
+          onClick={() => setAngle(setAngleFunc())}
+        >
+          Fisrt strike!
+        </button>
+      </div>
+      <div className="imgDiv">
+        <img
+          src="https://www.freepngimg.com/thumb/sword/24135-6-katana-transparent.png"
+          // src="https://www.vhv.rs/dpng/d/12-121036_katana-transparent-hd-png-download.png"
+          className="katanaImage"
+          alt="katana-img"
+          style={imgStyleAngle}
+        ></img>
+      </div>
     </div>
   );
 }
