@@ -1,14 +1,14 @@
-/* #root {
-} */
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .mainContent {
   text-align: center;
 
   font-family: "Roboto Condensed", sans-serif;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .mainContentIfAngleMoreThanZero {
@@ -38,6 +38,6 @@ body {
   background-color: #3498db;
 }
 .imgDiv {
-  flex-wrap: wrap;
-  display: flex;
+  position: relative;
+  top: -20rem;
 }

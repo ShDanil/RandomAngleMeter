@@ -11,11 +11,13 @@ function App() {
   let rotateDegsere = "rotate(" + angle + "deg)";
   let imgStyleAngle = {
     transform: rotateDegsere,
+    width: "50%",
+    transition: "transform 0.2s ease-in-out",
   };
   if (angle > 0) {
     return (
       <div className="mainContent">
-        <h1>Strike angle is {angle}</h1>
+        <h1>Strike angle is {angle}°</h1>
         <div>
           <button
             className="newAngleButton"
@@ -37,7 +39,7 @@ function App() {
   }
   return (
     <div className="mainContent">
-      <h1>Choose your destiny!</h1>
+      <h1>Prepare your anus!</h1>
       <div>
         <button
           className="newAngleButton"
@@ -49,7 +51,6 @@ function App() {
       <div className="imgDiv">
         <img
           src="https://www.freepngimg.com/thumb/sword/24135-6-katana-transparent.png"
-          // src="https://www.vhv.rs/dpng/d/12-121036_katana-transparent-hd-png-download.png"
           className="katanaImage"
           alt="katana-img"
           style={imgStyleAngle}
