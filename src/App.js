@@ -10,30 +10,26 @@ function App() {
 
   if (angle > 0) {
     return (
-      <div className="mainContainer">
-        <div classname="mainContent">
-          <h1>Strike angle is {angle}</h1>
-          <button
-            className="newAngleButton"
-            onClick={() => setAngle(setAngleFunc())}
-          >
-            New strike!
-          </button>
-        </div>
-      </div>
-    );
-  }
-  return (
-    <div className="mainContainer">
-      <div classname="mainContent">
-        <h1>Choose your destiny!</h1>
+      <div className="mainContent">
+        <h1>Strike angle is {angle}</h1>
         <button
           className="newAngleButton"
           onClick={() => setAngle(setAngleFunc())}
         >
-          Fisrt strike!
+          New strike!
         </button>
       </div>
+    );
+  }
+  return (
+    <div className="mainContent">
+      <h1>Choose your destiny!</h1>
+      <button
+        className="newAngleButton"
+        onClick={() => setAngle(setAngleFunc())}
+      >
+        Fisrt strike!
+      </button>
     </div>
   );
 }
