@@ -39,13 +39,14 @@ function App() {
   }
   return (
     <div className="mainContent">
+      <h1>Транспортир Отаке-сенсея</h1>
       <h1>Prepare your anus!</h1>
       <div>
         <button
           className="newAngleButton"
           onClick={() => setAngle(setAngleFunc())}
         >
-          Fisrt strike!
+          First strike!
         </button>
       </div>
       <div className="imgDiv">
